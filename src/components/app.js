@@ -9,7 +9,9 @@ angular.module('video-player')
 
   return {
     // TODO
-    scope: {},
+    scope: {
+      currentVideo:"<"
+    },
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
@@ -18,8 +20,18 @@ angular.module('video-player')
       this.selectVideo = () => {};
       this.searchResults = () => {};
       this.currentVideo = exampleVideoData[0];
+      console.log(this.currentVideo);
       this.videos = exampleVideoData;
       //console.log(this.videos)
+
+      //trying
+      this.onClick = (clickedVideo) => {
+        this.currentVideo= clickedVideo;
+        //console.log(this.videos)
+        //console.log(this);
+        // this.clickVideo = this.videos[index];
+        //console.log(this.clickVideo)
+      }
     },
   }
   

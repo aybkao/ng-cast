@@ -3,13 +3,18 @@ angular.module('video-player')
   return {
     // TODO
     scope: {
-      video: '<'
+      video: '<',
+       onClick: '<',
     },
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function(){
+      //this.onClick = () => {
+      //   console.log("I am clicked")
+      // }
       //console.log(this.video)
+      console.log(this)
     },
 
  	  templateUrl: 'src/templates/videoListEntry.html'
