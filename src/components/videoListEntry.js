@@ -12,6 +12,6 @@ angular.module('video-player')
       //console.log(this.video)
     },
 
- 	templateUrl: 'src/templates/videoListEntry.html'
+ 	  templateUrl: 'src/templates/videoListEntry.html'
   };
 });

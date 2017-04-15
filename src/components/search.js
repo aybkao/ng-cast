@@ -4,14 +4,16 @@ angular.module('video-player')
   return {
     // TODO
     scope: {
-      video: '<'
+      video: '<',
+      result: '<'
     },
     restrict: 'E',
     controllerAs: 'ctrl',
     bindToController: true,
     controller: function(){
       this.result = () => {};
-    };
+    },
+    
     templateUrl: 'src/templates/search.html'
   };
 });

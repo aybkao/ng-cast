@@ -13,7 +13,6 @@ angular.module('video-player')
       this.onClick = () => {}
       //console.log(this.videos)
     },
-   
     templateUrl: 'src/templates/videoList.html'
   }
 });

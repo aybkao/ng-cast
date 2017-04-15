@@ -9,7 +9,6 @@ angular.module('video-player')
 
   return {
     // TODO
-
     scope: {},
     restrict: 'E',
     controllerAs: 'ctrl',
@@ -22,7 +21,6 @@ angular.module('video-player')
       this.videos = exampleVideoData;
       //console.log(this.videos)
     },
-
   }
   
 });
