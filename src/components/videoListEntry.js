@@ -4,7 +4,7 @@ angular.module('video-player')
     // TODO
     scope: {
       video: '<',
-       onClick: '<',
+      onClick: '<',
     },
     restrict: 'E',
     controllerAs: 'ctrl',
@@ -14,7 +14,7 @@ angular.module('video-player')
       //   console.log("I am clicked")
       // }
       //console.log(this.video)
-      console.log(this)
+      //console.log(this)
     },
 
  	  templateUrl: 'src/templates/videoListEntry.html'

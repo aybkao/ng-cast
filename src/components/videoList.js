@@ -18,11 +18,8 @@ angular.module('video-player')
       //   this.clickVideo = this.videos[index];
       //   console.log(this.clickVideo)
       // }
-      console.log(this);
-   
-      
+      //console.log(this);
       //console.log(this.onClick)
-    
      
     },
     templateUrl: 'src/templates/videoList.html'

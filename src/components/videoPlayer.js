@@ -1,5 +1,11 @@
 angular.module('video-player')
 
+.controller('VideoPlayerController', function() {
+  this.videoUrl = () => {
+    return this.video ? `https://www.youtube.com/embed/${this.video.id.videoId}` : '';
+  };
+})
+
 .directive('videoPlayer', function() {
   return {
     // TODO
@@ -9,9 +15,7 @@ angular.module('video-player')
 		restrict: 'E',
 		controllerAs: 'ctrl',
 		bindToController: true,
-		controller: function(){
-		  console.log(this)
-		},
+		controller: 'VideoPlayerController',
 		templateUrl: 'src/templates/videoPlayer.html'
   };
 
